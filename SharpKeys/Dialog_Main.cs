@@ -864,6 +864,12 @@ namespace SharpKeys
             // is pretty obvious.  There is a bit of a reverse lookup however, so labels changed here
             // need to be changed in a couple of other places
             m_hashKeys = new Hashtable();
+            
+            // =======================================================================================
+            // https://stackoverflow.com/a/62066762
+            // https://stackoverflow.com/questions/38846347/what-is-the-scancode-of-pause-break-key
+            m_hashKeys.Add("E1_1D", "-by Vitox: Pause/Break");
+            // =======================================================================================
             m_hashKeys.Add("00_00", "-- Turn Key Off");
             m_hashKeys.Add("00_01", "Special: Escape");
             m_hashKeys.Add("00_02", "Key: 1 !");
